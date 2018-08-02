@@ -15,7 +15,7 @@ def create
 @coupon = Coupon.new
 @coupon.coupon_code= params[:coupon_code]
 @coupon.store = params[:store]
-@student.save
-redirect_to student_path(@student)
+@coupon.save
+redirect_to coupon_path(@coupon)
 end
 end
